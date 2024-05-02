@@ -13,3 +13,8 @@
 
 ### 5-print_string.py
 - Prints str * 3 and prints the first 9 characters of str
+
+### 6-concat.py
+- concats str1 and str2 together to finish a str
+
+### 7-
