@@ -11,4 +11,5 @@
 ### 4-print_float.py
 - Prints a float number to two decimal points using format
 
-### 5-p
+### 5-print_string.py
+- Prints str * 3 and prints the first 9 characters of str
