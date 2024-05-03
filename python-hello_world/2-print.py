@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
-# Prints simple string
-print("Programming is like a multilingual puzzle")
+# prints simple str
+print("Programming is like building a multilingual puzzle")
