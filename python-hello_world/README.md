@@ -17,4 +17,5 @@
 ### 6-concat.py
 - concats str1 and str2 together to finish a str
 
-### 7-
+### 7-edges.py
+- prints the first 3, last 2, and middle characters of the given str.
