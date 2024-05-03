@@ -19,3 +19,8 @@
 
 ### 7-edges.py
 - prints the first 3, last 2, and middle characters of the given str.
+
+### 8-concat_edges.py
+- complete source code to print out object oriented programming with python followed by newline
+
+### 9-
