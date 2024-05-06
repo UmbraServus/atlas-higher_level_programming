@@ -10,4 +10,5 @@
 ### 2-print_alphabet.py
 - use for loop with chr to print alphabet a-z.
 
-### 3-
+### 3-print_alphabt.py
+- prints alphabet without q or e.
