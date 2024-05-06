@@ -7,4 +7,7 @@
 ### 1-last_digit.py
 - isolating last digit from a given number and determining if it is greater than 5, less than 6 or is 0.
 
-### 2-
+### 2-print_alphabet.py
+- use for loop with chr to print alphabet a-z.
+
+### 3-
