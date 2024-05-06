@@ -13,4 +13,5 @@
 ### 3-print_alphabt.py
 - prints alphabet without q or e.
 
-### 4-
+### 4-print_hexa.py
+- prints decimal and hexidecimal format 0 - 98.
