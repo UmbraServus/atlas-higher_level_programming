@@ -5,4 +5,3 @@ for fd in range(0, 10):
             print("{}{}".format(fd, sd))
         elif fd != sd:
             print("{}{}".format(fd, sd), end=", ")
-            
