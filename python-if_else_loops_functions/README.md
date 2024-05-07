@@ -27,3 +27,6 @@
 
 ### 8-uppercase.py
 - changes all letters in a str to uppercase
+
+### 9-print_last_digit.py
+- returns last digit of the number.
