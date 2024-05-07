@@ -34,4 +34,7 @@
 ### 10-add.py
 - adds two ints together.
 
-## 11-
+## 11-pow.py
+- returns a^b
+
+## 12-
