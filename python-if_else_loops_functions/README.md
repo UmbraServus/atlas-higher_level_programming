@@ -37,4 +37,5 @@
 ## 11-pow.py
 - returns a^b
 
-## 12-
+## 12-fizzbuzz.py
+- prints 1-100 but prints fizz on multiples of 3 buzz on multiples of 5 and fizzbuzz on multiples of both.
