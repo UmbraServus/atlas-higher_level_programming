@@ -19,5 +19,8 @@
 ### 5-print_comb2.py
 - prints 00 - 99 using string format  and one for loop with a newline on 99.
 
+### 6-print_comb3.py
+- prints combo of digit 1-9 without repeating a combo with a newline on the last one.
+
 ### 7-islower.py
 - checks if character given is lowercase a-z or not. returns true or false based on that.
