@@ -18,3 +18,6 @@
 
 ### 5-print_comb2.py
 - prints 00 - 99 using string format  and one for loop with a newline on 99.
+
+### 7-islower.py
+- checks if character given is lowercase a-z or not. returns true or false based on that.
