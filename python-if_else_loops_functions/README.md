@@ -29,4 +29,9 @@
 - changes all letters in a str to uppercase
 
 ### 9-print_last_digit.py
-- returns last digit of the number.
+- returns and prints last digit of the number.
+
+### 10-add.py
+- adds two ints together.
+
+## 11-
