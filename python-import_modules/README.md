@@ -5,4 +5,8 @@
 - imports add and uses it with a and b variables defined with 1 and 2 respectively.
 - imports from add_0.py
 
-### 1-
+### 1-calculation.py
+- imports add sub mul and div
+- uses it with a and b being defined wiht 10 and 5 respectively
+
+### 2-
