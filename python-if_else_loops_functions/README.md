@@ -24,3 +24,6 @@
 
 ### 7-islower.py
 - checks if character given is lowercase a-z or not. returns true or false based on that.
+
+### 8-uppercase.py
+- changes all letters in a str to uppercase
