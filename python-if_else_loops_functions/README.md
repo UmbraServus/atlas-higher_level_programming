@@ -15,3 +15,6 @@
 
 ### 4-print_hexa.py
 - prints decimal and hexidecimal format 0 - 98.
+
+### 5-print_comb2.py
+- prints 00 - 99 using string format  and one for loop with a newline on 99.
