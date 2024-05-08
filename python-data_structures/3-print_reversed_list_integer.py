@@ -1,0 +1,6 @@
+#!/usr/bin/
+def print_reversed_list_integer(my_list=[]):
+    list.reverse(my_list)
+    for x in my_list:
+        print({}.formant(x))
+        
