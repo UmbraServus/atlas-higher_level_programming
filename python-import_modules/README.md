@@ -14,3 +14,6 @@
 
 ### 3-infinite_add.py
 - adds all the argv together
+
+### 4-hidden_discovery
+- imports a module, then looks thru the module for names that dont start with __ and prints them.
