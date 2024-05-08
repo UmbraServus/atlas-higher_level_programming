@@ -17,3 +17,6 @@
 
 ### 4-hidden_discovery
 - imports a module, then looks thru the module for names that dont start with __ and prints them.
+
+### 5-variable_load.py
+- imports a variable from a module and prints it.
