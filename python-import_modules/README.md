@@ -9,4 +9,7 @@
 - imports add sub mul and div
 - uses it with a and b being defined wiht 10 and 5 respectively
 
-### 2-
+### 2-args.py
+- lists the amount of argv given to the command line and prints each argv given
+
+### 3-
