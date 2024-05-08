@@ -12,4 +12,5 @@
 ### 2-args.py
 - lists the amount of argv given to the command line and prints each argv given
 
-### 3-
+### 3-infinite_add.py
+- adds all the argv together
