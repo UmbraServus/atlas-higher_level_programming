@@ -17,7 +17,7 @@ class Square:
             setter sets the size of the square instance"""
         return self.__size
     
-    @size.getter
+    @size.setter
     def size(self, value):
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
