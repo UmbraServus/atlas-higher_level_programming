@@ -8,7 +8,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """initializes a new rectangle
-        
+
         Args:
             width (int): Width of new rectangle
             height (int): Height of the new rectangle
@@ -20,7 +20,7 @@ class Rectangle:
     def width(self):
         """gets/sets the width of reactangle"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -33,7 +33,7 @@ class Rectangle:
     def height(self):
         """gets/sets height of rectangle"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
@@ -41,3 +41,4 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must but >= 0")
         self.__height = value
+        
