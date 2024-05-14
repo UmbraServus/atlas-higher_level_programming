@@ -7,9 +7,11 @@ class Rectangle:
 
     Attributes:
         number_of_instances (int): number of rectangle instances
+        print_symbol (any): character to be used in str() or print()
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """initializes a new rectangle
@@ -61,14 +63,14 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """returns repesentation of square in "#" """
+        """returns repesentation of square using print_symbol variable """
         if self.__width == 0 or self.__height == 0:
             return ("")
 
         rectangle = ""
 
         for x in range(self.__height):
-            rectangle += "#" * self.__width
+            rectangle += f"{Rectangle.print_symbol}" * self.__width
             if x < self.__height - 1:
                 rectangle += "\n"
         return rectangle
