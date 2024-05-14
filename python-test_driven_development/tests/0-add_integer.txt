@@ -9,6 +9,7 @@ It will add two numbers together like using the + sign.
 ------
 Examples:
 
+    >>> from ..0-add_integer import add_integer
     >>> add_integer(2, 3)
     5
 
@@ -18,21 +19,21 @@ Examples:
 
 works with floats, which will be casted into ints before returning caluclation.
 
-    >>>add_integer(3.2, 2.8)
+    >>> add_integer(3.2, 2.8)
     5
 
-    >>>add_integer(-3.2, -2.8)
+    >>> add_integer(-3.2, -2.8)
     -5
 
 floats and non-floats can be added together.
-    >>>add_integer(2, 3.5)
+    >>> add_integer(2, 3.5)
     5
 
-    >>>add_integer(2, -3.5)
+    >>> add_integer(2, -3.5)
     -1
 
 by default b is 98.
->>>add_integer(602)
+>>> add_integer(602)
 700
 
 Non-number cases
@@ -44,10 +45,10 @@ other wise it will raise TypeError:
 
 Examples:
 
-        >>>add_integer(2, "atlas")
+        >>> add_integer(2, "atlas")
         Traceback (most recent call last):
         TypeError: b must be an integer
 
-        >>>add_integer("atlas", 2)
+        >>> add_integer("atlas", 2)
         Traceback (most recent call last):
         TypeError: a must be an integer
