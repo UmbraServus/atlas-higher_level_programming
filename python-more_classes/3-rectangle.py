@@ -60,8 +60,8 @@ class Rectangle:
 
         rectangle = ""
 
-        for x in range(self.height):
-            rectangle += "#" * self._width
-            if x < self.height - 1:
+        for x in range(self.__height):
+            rectangle += "#" * self.__width
+            if x < self.__height - 1:
                 rectangle += "\n"
         return rectangle
