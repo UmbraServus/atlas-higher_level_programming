@@ -6,7 +6,7 @@ class Rectangle:
     """Represents rectangle class"""
 
 
-    def __innit__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """initializes a new rectangle
         
         Args:
