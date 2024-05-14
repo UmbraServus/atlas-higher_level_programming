@@ -1,15 +1,24 @@
 #!/usr/bin/python3
-"""rectangle class"""
+"""Definea rectangle class"""
 
 
 class Rectangle:
-    """rectangle class"""
+    """Represents rectangle class"""
+
+
     def __innit__(self, width=0, height=0):
+        """initializes a new rectangle
+        
+        Args:
+            width (int): Width of new rectangle
+            height (int): Height of the new rectangle
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """gets/sets the width of reactangle"""
         return self.__width
     
     @width.setter
@@ -23,6 +32,7 @@ class Rectangle:
 
     @property
     def height(self):
+        """gets/sets height of rectangle"""
         return self.__height
     
     @height.setter
@@ -33,4 +43,3 @@ class Rectangle:
             raise ValueError("height must but >= 0")
         else:
             self.__height = value
-            
