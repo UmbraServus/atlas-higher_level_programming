@@ -67,4 +67,9 @@ class Rectangle:
         return rectangle
 
     def __repr__(self):
+        """ returns official representation str of rectangle"""
         return f"Rectangle({self.__width}, {self.__height})"
+
+    def __del__(self):
+        """prints bye rectangle when del is detected"""
+        print(f"Bye rectangle...")
