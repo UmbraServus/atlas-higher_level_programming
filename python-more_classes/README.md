@@ -5,4 +5,4 @@
 - empty rectangle class
 
 ### 1-rectangle.py
-- 
+- has height and width with getters and setters and private instances.
