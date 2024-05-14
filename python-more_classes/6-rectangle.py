@@ -4,7 +4,7 @@
 
 class Rectangle:
     """Represents rectangle class
-    
+
     Attributes:
         number_of_instances (int): number of rectangle instances
     """
@@ -21,6 +21,7 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
+
     @property
     def width(self):
         """gets/sets the width of reactangle"""
