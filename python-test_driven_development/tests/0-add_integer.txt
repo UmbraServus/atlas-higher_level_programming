@@ -31,8 +31,17 @@ floats and non-floats can be added together.
     -1
 
 by default b is 98.
->>> add_integer(602)
-700
+    >>> add_integer(602)
+    700
+
+Function will fail if infinity
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(2, float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
 
 Non-number cases
 ================
@@ -43,10 +52,18 @@ other wise it will raise TypeError:
 
 Examples:
 
-        >>> add_integer(2, "atlas")
-        Traceback (most recent call last):
-        TypeError: b must be an integer
+    >>> add_integer(2, "atlas")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
 
-        >>> add_integer("atlas", 2)
-        Traceback (most recent call last):
-        TypeError: a must be an integer
+    >>> add_integer("atlas", 2)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(2, float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
