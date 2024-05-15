@@ -1,15 +1,13 @@
 Examples of add_integer.py
 ==========================
 
-using add_integer(a b=(98)) 
-===========================
-
-add_integer(...) returns addition of two arguments.
+add_integer(a, b=98) returns addition of two arguments.
 It will add two numbers together like using the + sign.
 ------
+
 Examples:
 
-    >>>add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer = __import__('0-add_integer').add_integer
     >>> add_integer(2, 3)
     5
 
