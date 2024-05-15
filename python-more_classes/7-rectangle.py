@@ -68,9 +68,8 @@ class Rectangle:
             return ("")
 
         rectangle = ""
-
         for x in range(self.__height):
-            rectangle += f"{Rectangle.print_symbol}" * self.__width
+            rectangle += f"{self.print_symbol}" * self.__width
             if x < self.__height - 1:
                 rectangle += "\n"
         return rectangle
