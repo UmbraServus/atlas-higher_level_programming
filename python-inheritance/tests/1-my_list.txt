@@ -5,6 +5,27 @@
                 self
 
             Examples:
-                >>> my_list = Mylist([1, 4, 2, 3, 5])
+                >>> Mylist = __import__("1-my_list").Mylist
+                >>> my_list = Mylist()
+
+            Empty list:
+                >>> my_list.print_sorted()
+                []
+            
+            Unsorted list:
+                >>> my_list.append(1)
+                >>> my_list.append(4)
+                >>> my_list.append(5)
+                >>> my_list.append(2)
+                >>> my_list.append(3)
                 >>> my_list.print_sorted()
                 [1, 2, 3, 4, 5]
+            
+            sorted list:
+                >>> my_list = Mylist()
+                >>> my_list.append(1)
+                >>> my_list.append(2)
+                >>> my_list.append(3)
+                >>> my_list.append(4)
+                >>> my_list.append(5)
+                
