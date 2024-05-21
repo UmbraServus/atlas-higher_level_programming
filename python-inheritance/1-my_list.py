@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+""" Module: class Mylist along with methods and objects associated with it. """
+
 class Mylist(list):
 
     """ class Mylist that inherits from list"""
