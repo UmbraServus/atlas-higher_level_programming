@@ -2,7 +2,7 @@
 """ Module: class Mylist along with methods and objects associated with it. """
 
 
-class Mylist(list):
+class MyList(list):
     """ class Mylist that inherits from list """
 
     def print_sorted(self):
