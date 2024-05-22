@@ -2,7 +2,7 @@
 """ appends to a file"""
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """opens and appends to a file
 
         args:
