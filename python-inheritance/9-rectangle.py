@@ -7,7 +7,7 @@ class Rectangle(BaseGeometry):
     """ Rectangle class with inheritance from BaseGeometry
 
         Methods:
-            Area(): Not implemented yet
+            Area(): returns area of rectangle
             Integer_validator(): validates if given value is an integer
     """
     def __init__(self, width, height):
