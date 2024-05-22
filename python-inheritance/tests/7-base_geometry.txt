@@ -1,0 +1,32 @@
+class BaseGeometry():
+
+    >>> BaseGeometry = __import__("7-base_geometry.py").BaseGeometry
+    >>> BaseGeo = BaseGeometry()
+
+    def area(self):
+        not implemented yet
+        
+        >>> BaseGeo.area()
+        Traceback (most recent call last):
+        Exception: area() is not implemented
+
+    def integer_validator(self, name, value):
+            validates if value is an int or not
+
+            args:
+                self: itself
+                name (str): name of itself
+                value (int): value of itself
+
+            raises:
+                TypeError: if value is not an integer
+                ValueError: if value is <= 0
+
+        >>> BaseGeo.integer_validator("name", "Matt")
+        Traceback (most recent call last):
+        TypeError: name must be an integer
+
+        >>> BaseGeo.integer_validator("age", 0)
+        Traceback (most recent call last):
+        ValueError: age must be greater than 0
+    
