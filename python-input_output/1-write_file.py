@@ -10,6 +10,6 @@ def write_file(filename="", text=""):
             text: text to be added to file
     """
 
-    
+
     with open(filename, 'w', encoding="utf-8") as f:
-        f.write(text)
+       return f.write(text)
