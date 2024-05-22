@@ -33,14 +33,15 @@ class BaseGeometry():
         >>> BaseGeo.integer_validator()
         Traceback (most recent call last):
         ...
+         TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
         >>> BaseGeo.integer_validator("age")
         Traceback (most recent call last):
         ...
+        TypeError: integer_validator() missing 1 required positional argument: 'value'
 
         >>> BaseGeo.integer_validator("age", 1)
         
         >>> BaseGeo.integer_validator("age",(4,))
         Traceback (most recent call last):
         ...
-        
