@@ -10,7 +10,7 @@ class Rectangle(BaseGeometry):
             Area(): Not implemented yet
             Integer_validator(): validates if given value is an integer
     """
-    def __init__(self, width, height:
+    def __init__(self, width, height):
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
