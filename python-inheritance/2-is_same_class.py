@@ -3,7 +3,8 @@
 
 
 def is_same_class(obj, a_class):
-    """ returns true or false based on wethere or not object is an instance of the given class
+    """ returns true or false based on wethere or not object is an instance of
+        the given class
 
         args:
             obj: object to compare if it an instance of given class
