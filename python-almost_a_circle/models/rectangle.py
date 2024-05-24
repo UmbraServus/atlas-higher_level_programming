@@ -20,6 +20,25 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
+        """ methods/setters/getters """
+
+    def _validator_method(self, value, name):
+        """ validates all the setters and instantiations
+
+            args:
+                value (int): variable to be validated
+                name (str): name of the attribute to be validated
+        """
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
+        if name in ["width", "height"]:
+            if value <= 0:
+                raise ValueError(f"{name} must be > 0")
+        if name in ["x", "y"]:
+            if value < 0:
+                raise ValueError(f"{name} must be >= 0")
+
+    
     @property
     def width(self):
         return self.__width
