@@ -57,8 +57,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """returns an overridden str rep of the self."""
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - 
-        {self.__width}/{self.__height}"
+        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - 
+        {self.__width}/{self.__height}")
 
     @property
     def width(self):
