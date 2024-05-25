@@ -15,6 +15,11 @@ class Rectangle(Base):
     def __init__(self, width, height, x = 0, y = 0, id = None):
         super().__init__(id)
 
+        self._validator_method(width, "width")
+        self._validator_method(height, "height")
+        self._validator_method(x, "x")
+        self._validator_method(y, "y")
+
         self.__width = width
         self.__height = height
         self.__x = x
@@ -57,16 +62,20 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, new_width):
+        self._validator_method(new_width, "width")
         self.__width = new_width
     
     @height.setter
     def height(self, new_height):
+        self._validator_method(new_height, "height")
         self.__height = new_height
     
     @x.setter
     def x(self, new_x):
+        self._validator_method(new_x, "x")
         self.__x = new_x
 
     @y.setter
     def y(self, new_y):
+        self._validator_method(new_y, "y")
         self.__y = new_y
