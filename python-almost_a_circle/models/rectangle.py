@@ -66,6 +66,8 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
+        """ updates each of the attributes based on a how many parameters
+            are passed to args. """
         if args and len(args) > 0:
             if len(args) > 0:
                 self.id = args[0]
