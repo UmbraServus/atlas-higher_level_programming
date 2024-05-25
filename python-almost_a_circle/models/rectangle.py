@@ -3,6 +3,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """ Rectangle class:
 
@@ -12,7 +13,7 @@ class Rectangle(Base):
             x (int): position in rectangle
             y (int): position in rectangle
     """
-    def __init__(self, width, height, x = 0, y = 0, id = None):
+    def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
 
         self._validator_method(width, "width")
@@ -51,7 +52,7 @@ class Rectangle(Base):
         """ prints to stdout a representation of a rectangle using "#" """
         for row in range(self.__height):
             for column in range(self.__width):
-                print("#", end= "")
+                print("#", end="")
             print("")
 
     @property
@@ -74,12 +75,12 @@ class Rectangle(Base):
     def width(self, new_width):
         self._validator_method(new_width, "width")
         self.__width = new_width
-    
+
     @height.setter
     def height(self, new_height):
         self._validator_method(new_height, "height")
         self.__height = new_height
-    
+
     @x.setter
     def x(self, new_x):
         self._validator_method(new_x, "x")
