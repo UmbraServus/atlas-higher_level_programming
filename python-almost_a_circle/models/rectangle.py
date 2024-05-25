@@ -50,7 +50,10 @@ class Rectangle(Base):
 
     def display(self):
         """ prints to stdout a representation of a rectangle using "#" """
+        for vert_position in range(self.__y):
+            print()
         for row in range(self.__height):
+            print(" " * self.__x, end="")
             for column in range(self.__width):
                 print("#", end="")
             print("")
