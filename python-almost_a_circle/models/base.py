@@ -58,7 +58,7 @@ class Base:
         dummy_instance.update(**dictionary)
         return dummy_instance
 
-    @classmethod    
+    @classmethod
     def load_from_file(cls):
         """ loads a json str from file then returns an instance of the
             object contained in the file."""
