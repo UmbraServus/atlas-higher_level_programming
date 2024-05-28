@@ -93,6 +93,7 @@ class Rectangle(Base):
                 self.__y = kwargs["y"]
 
     def to_dictionary(self):
+        """ returns a dictionary representation of rectangle attributes """
         return {
             "id": self.id,
             "width": self.width,
