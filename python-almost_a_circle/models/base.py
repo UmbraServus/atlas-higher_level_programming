@@ -27,7 +27,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ writes the json str representation to a file named <classname>.json """
+        """ writes the json str representation to classname.json """
         dict_list = []
         file = cls.__name__ + ".json"
         with open(file, "w") as f:
