@@ -38,6 +38,7 @@ class Square(Rectangle):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
+        """returns a dictionary representation of attributes"""
         return {
             "id": self.id,
             "size": self.size,
