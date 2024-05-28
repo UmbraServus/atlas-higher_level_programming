@@ -16,6 +16,7 @@ class Base:
 
     """methods/setters/getters"""
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         import json
         if list_dictionaries is not None:
