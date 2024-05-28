@@ -54,5 +54,5 @@ class Base:
             dummy_instance = cls(1, 1)
         if cls.__name__ == "Square":
             dummy_instance = cls(1)
-        dummy_instance.update(**dictionary)                   
+        dummy_instance.update(**dictionary)
         return dummy_instance
