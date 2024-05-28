@@ -2,9 +2,10 @@
 """ Module: Square class that inherits from Rectangle """
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
-    """ Square class that inherits from rectangle 
-        
+    """ Square class that inherits from rectangle
+
         attributes: all the same except now height and width are both size
          due to a square being equal on all sides.
     """
