@@ -46,3 +46,13 @@ class Base:
                 dict_list = [obj.to_dictionary() for obj in list_objs]
                 json_str = cls.to_json_string(dict_list)
                 f.write(json_str)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ creates a dummy instance of class and updates it """
+        if cls.__name__ == "Rectangle":
+            dummy_instance = cls(1, 1)
+        if cls.__name__ == "Square":
+            dummy_instance = cls(1)
+        dummy_instance.update(**dictionary)                   
+        return dummy_instance
