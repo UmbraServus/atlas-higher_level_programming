@@ -31,7 +31,7 @@ class Base:
         if json_string:
             return json.loads(json_string)
         else:
-            return "[]"
+            return []
     
     @classmethod
     def save_to_file(cls, list_objs):
