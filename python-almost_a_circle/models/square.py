@@ -18,7 +18,7 @@ class Square(Rectangle):
         """returns an overridden str rep of the self."""
         return (
             f"[{self.__class__.__name__}] ({self.id}) {self.x}/{self.y} - "
-            f"{self.width}/{self.height}"
+            f"{self.size}/{self.size}"
         )
 
     def update(self, *args, **kwargs):
