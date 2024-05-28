@@ -32,7 +32,7 @@ class Base:
             return json.loads(json_string)
         else:
             return []
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """ writes the json str representation to classname.json """
