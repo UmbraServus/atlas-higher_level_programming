@@ -14,6 +14,13 @@ class Square(Rectangle):
 
     """ methods/setters/getters """
 
+    def __str__(self):
+        """returns an overridden str rep of the self."""
+        return (
+            f"[{self.__class__.__name__}] ({self.id}) {self.__x}/{self.__y} - "
+            f"{self.__width}/{self.__height}"
+        )
+
     def update(self, *args, **kwargs):
         """ updates each of the attributes based on a how many parameters
             are passed to args. """
