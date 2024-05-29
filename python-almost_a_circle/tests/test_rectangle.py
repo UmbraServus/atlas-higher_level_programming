@@ -29,7 +29,7 @@ class TestRectangleclass(unittest.TestCase):
         with self.assertRaises(ValueError):
             Rectangle(7, 14, 21, -28)
 
-        with self.assertRaises(ValueError)
+        with self.assertRaises(ValueError):
             Rectangle(0, 7)
 
 if __name__== "__main__":
