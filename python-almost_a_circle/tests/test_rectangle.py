@@ -30,6 +30,12 @@ class TestRectangleclass(unittest.TestCase):
             Rectangle(7, 14, 1, "2")
 
         with self.assertRaises(ValueError):
+            Rectangle(-7, 14)
+
+        with self.assertRaises(ValueError):
+            Rectangle(7, -14)
+
+        with self.assertRaises(ValueError):
             Rectangle(7, 14, -21)
 
         with self.assertRaises(ValueError):
