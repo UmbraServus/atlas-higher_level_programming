@@ -8,13 +8,13 @@ class TestRectangleclass(unittest.TestCase):
     """ Unittests for Rectangle """
 
     def test_rectangle_instance(self):
-        rect1 = Rectangle(7, 14)
+        rect1 = Rectangle(1, 2)
         self.assertIsInstance(rect1, Rectangle)
 
-        rect2 = Rectangle(7, 14, 21)
+        rect2 = Rectangle(1, 2, 3)
         self.assertIsInstance(rect2, Rectangle)
 
-        rect3 = Rectangle(7, 14, 21, 28)
+        rect3 = Rectangle(1, 2, 3, 4)
         self.assertIsInstance(rect3, Rectangle)
 
         with self.assertRaises(TypeError):
@@ -22,6 +22,12 @@ class TestRectangleclass(unittest.TestCase):
 
         with self.assertRaises(TypeError):
             Rectangle("7", 14)
+
+        with self.assertRaises(TypeError):
+            Rectangle(7, 14, "1")
+
+        with self.assertRaises(TypeError):
+            Rectangle(7, 14, 1, "2")
 
         with self.assertRaises(ValueError):
             Rectangle(7, 14, -21)
@@ -31,6 +37,8 @@ class TestRectangleclass(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             Rectangle(0, 7)
-
+        
+        with self.assertRaises(ValueError):
+            Rectangle(7, 0)
 if __name__== "__main__":
     unittest.main()
