@@ -1,0 +1,3 @@
+-- shows all rows from first table
+-- idk ...
+SELECT * from first_table;
