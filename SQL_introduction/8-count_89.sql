@@ -1,4 +1,4 @@
---counts the occurences of id
+-- counts the occurences of id
 -- using count!
 SELECT COUNT(*) 
 FROM first_table
