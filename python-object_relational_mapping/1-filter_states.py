@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Module to list all states in a database by id where name starts with N """
+""" 
+Module to list all states in a database by id where name starts with N 
+"""
 import sys
 import MySQLdb
 
