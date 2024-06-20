@@ -10,6 +10,7 @@ if __name__ == "__main__":
                 FROM cities
                 INNER JOIN states ON cities.state_id = states.id
                 ORDERED BY cities.id ASC """
+
     db = MySQLdb.connect(
         host='localhost',
         port=3306,
@@ -19,7 +20,7 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    cur.execute()
+    cur.execute(query)
     list = cur.fetchall()
 
     for state in list:
