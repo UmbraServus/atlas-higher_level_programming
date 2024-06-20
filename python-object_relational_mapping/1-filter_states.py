@@ -18,12 +18,13 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     cur.execute(
-        "SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
-        )
+        """
+    SELECT id, name
+    FROM states
+    WHERE name LIKE 'N%'
+    ORDER BY id ASC"""
+    )
     list = cur.fetchall()
 
     for state in list:
         print(state)
-
-cur.close()
-db.close()
