@@ -18,11 +18,11 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     cur.execute(
-        f"""
+        """
     SELECT id, name
     FROM states
-    WHERE name = '{sys.argv[4]}'
-    ORDER BY id ASC"""
+    WHERE name = '{}'
+    ORDER BY id ASC""".format(sys.argv[4])
     )
     list = cur.fetchall()
 
