@@ -9,7 +9,7 @@ if __name__ == "__main__":
     query = """ SELECT id, name, states.name
                 FROM cities
                 INNER JOIN states ON cities.state_id = states.id
-                ORDERED BY cities.id ASC """
+                ORDER BY cities.id ASC """
 
     db = MySQLdb.connect(
         host='localhost',
