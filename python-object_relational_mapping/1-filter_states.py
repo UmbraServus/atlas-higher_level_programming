@@ -21,7 +21,7 @@ if __name__ == "__main__":
         """
     SELECT id, name
     FROM states
-    WHERE name LIKE 'N%'
+    WHERE BINARY name LIKE 'N%'
     ORDER BY id ASC"""
     )
     list = cur.fetchall()
