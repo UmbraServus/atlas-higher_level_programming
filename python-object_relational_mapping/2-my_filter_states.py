@@ -1,12 +1,16 @@
 #!/usr/bin/python3
 """
 Module to lists states in a database by id where name is given as an argument
+but does it safely by making the query a variable to be passed to execute.
 """
 import sys
 import MySQLdb
 
 
 if __name__ == "__main__":
+
+    state_name = sys.argv[4]
+    query = "SELECT id, name FROM states WHERE name = %s ORDER BY id ASC"
 
     db = MySQLdb.connect(
         host='localhost',
@@ -17,13 +21,7 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    cur.execute(
-        """
-    SELECT id, name
-    FROM states
-    WHERE BINARY name = '{}'
-    ORDER BY id ASC""".format(sys.argv[4])
-    )
+    cur.execute(query, (state_name,))
     list = cur.fetchall()
 
     for state in list:
