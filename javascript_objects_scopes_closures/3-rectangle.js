@@ -14,7 +14,7 @@ class Rectangle {
         for (let columns = 0; columns < this.width; columns++) {
             rectangle += 'X';
         }
-        if (x < this.height - 1) {
+        if (rows < this.height - 1) {
             rectangle += '\n';
         }
     }
