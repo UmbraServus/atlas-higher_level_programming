@@ -7,12 +7,11 @@ class Rectangle {
       this.height = h;
     }
   }
-}
 
   print() {
-    let rectangle = ''
-        for (let x = 0; x < this.height; x++) {
-        for (let i = 0; i < this.width; i++) {
+    let rectangle = '';
+      for (let rows = 0; rows < this.height; x++) {
+        for (let columns = 0; columns < this.width; i++) {
             rectangle += 'X';
         }
         if (x < this.height - 1) {
@@ -21,7 +20,6 @@ class Rectangle {
     }
     console.log(rectangle);
   }
-
 }
 
 module.exports = Rectangle;
