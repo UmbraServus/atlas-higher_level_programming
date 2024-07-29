@@ -18,7 +18,7 @@ function findSecondLargest(numbers) {
     return secondLargest;
 }
 
-if (process.argv.length <= 3 || parseInt(process.argv[2]) === 1) {
+if (process.argv.length <= 3) {
     console.log(0);
 } else {
     const numbers = process.argv.slice(2).map(Number).filter(num => Number.isInteger(num));
