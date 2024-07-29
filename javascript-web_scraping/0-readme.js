@@ -9,7 +9,7 @@ const filePath = process.argv[2];
 
 if (!filePath) {
   console.error('Missing filepath');
-  return;
+  process.exit(1);
 }
 
 //const absolutePath = path.resolve(filePath);
