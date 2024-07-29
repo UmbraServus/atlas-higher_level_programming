@@ -16,7 +16,7 @@ const absolutePath = path.resolve(filePath);
 
 fs.readFile(absolutePath, 'utf8', (err, data) => {
   if (err) {
-    console.error('Error:', err);
+    console.error(err);
     return;
   }
 
