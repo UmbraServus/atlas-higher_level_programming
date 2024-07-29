@@ -12,9 +12,9 @@ if (!filePath) {
   return;
 }
 
-const absolutePath = path.resolve(filePath);
+//const absolutePath = path.resolve(filePath);
 
-fs.readFile(absolutePath, 'utf8', (err, data) => {
+fs.readFile(filePath, 'utf8', (err, data) => {
   if (err) {
     console.error(err);
     return;
