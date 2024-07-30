@@ -11,6 +11,7 @@ if (!url) {
 // get request to base url
 request(url, (error, response, body) => {
   if (error) {
+    console.log(0)
     return;
   }
   // get data and parse it for needed char info.
