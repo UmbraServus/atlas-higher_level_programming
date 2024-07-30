@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// get the request module 
+// get the request module
 const request = require('request');
 // get the id or dfault to 18
 const charId = process.argv[3] || 18;
@@ -15,7 +15,7 @@ request(url, (error, response, body) => {
     return;
   }
   // get data and parse it for needed char info.
-  let jsonData = JSON.parse(body);
+  const jsonData = JSON.parse(body);
   let charUrl = null;
   for (const film of jsonData.results) {
     for (const charsUrl of film.characters) {
