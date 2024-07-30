@@ -9,7 +9,6 @@ if (!url) {
   console.error('Need URL');
 } else if (url == 'http://localhost:5050/route_2') {
   console.log(10)
-  return;
 }
 // get request to base url
 request(url, (error, response, body) => {
