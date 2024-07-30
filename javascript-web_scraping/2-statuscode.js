@@ -15,4 +15,4 @@ request(url, (error, response, body) => {
   }
 
   console.log('code:', response.statusCode);
-})
+});
