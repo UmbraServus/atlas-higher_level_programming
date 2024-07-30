@@ -15,7 +15,6 @@ if (!filePath || !strData) {
 fs.writeFile(filePath, strData, 'utf8', (err) => {
   if (err) {
     console.error(err);
-    return;
   }
   // console.log('File write was successful');
 });
