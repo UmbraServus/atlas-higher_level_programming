@@ -11,7 +11,7 @@ if (!url) {
 // get request to base url
 request(url, (error, response, body) => {
   if (error) {
-    console.log(0)
+    console.log(0);
     return;
   }
   // get data and parse it for needed char info.
@@ -39,7 +39,13 @@ request(url, (error, response, body) => {
       // console.log(response.statusCode);
       const charData = JSON.parse(body);
       const { films } = charData;
-      console.log(films.length);
+      if (films) {
+        console.log(films.length);
+      } else {
+        console.log(0);
+      }
     });
+  } else {
+    console.log(0);
   }
 });
