@@ -17,4 +17,4 @@ request(url, (error, response, body) => {
   const jsonData = JSON.parse(body);
   const { title } = jsonData;
   console.log(title);
-})
+});
