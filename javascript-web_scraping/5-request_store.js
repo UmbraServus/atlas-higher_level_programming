@@ -1,7 +1,6 @@
 #!/usr/bin/node
-// using what I learned in writeme and the swapi tasks I was able to 
+// using what I learned in writeme and the swapi tasks I was able to
 // get the data and write the data to a given file pathname.
- 
 const request = require('request');
 const fs = require('fs');
 const url = process.argv[2];
