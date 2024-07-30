@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 // get the request module 
 const request = require('request');
 // get the id or dfault to 18
@@ -12,7 +11,6 @@ if (!url) {
 // get request to base url
 request(url, (error, response, body) => {
   if (error) {
-    console.error(error);
     return;
   }
   // get data and parse it for needed char info.
@@ -37,12 +35,10 @@ request(url, (error, response, body) => {
         console.error('request failed', error);
         return;
       }
-
       // console.log(response.statusCode);
       const charData = JSON.parse(body);
       const { films } = charData;
       console.log(films.length);
-
     });
   }
 });
