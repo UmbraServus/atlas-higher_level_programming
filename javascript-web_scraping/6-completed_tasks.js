@@ -5,10 +5,10 @@ const url = process.argv[2];
 // get data
 request(url, (error, response, body) => {
   if (error) {
-    console.error("Request error:", error);
+    console.error('Request error:', error);
     process.exit(1);
   }
-  //parse data
+  // parse data
   const tasks = JSON.parse(body);
 
   // setup an obj to store tasks count and ids
